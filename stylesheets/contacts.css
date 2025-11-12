@@ -1,0 +1,109 @@
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 3rem;
+    
+    background: none;
+    border: 0px;
+    box-shadow: none;
+}
+
+.main-content .left{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.main-content ul{
+    padding: 1rem;
+    background: linear-gradient(135deg, #1E1E1E 0%, #2A2A2A 100%);
+    border: 2px solid #D72638;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    
+    list-style: none;
+}
+
+iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    background: linear-gradient(135deg, #1E1E1E 0%, #2A2A2A 100%);
+    border: 2px solid #D72638;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+
+    padding: 2rem;
+    width: 400px;
+    max-width: 90%;
+}
+
+form label {
+    font-weight: bold;
+    color: #F5F5F5;
+}
+
+/*Inputs*/
+form input[type="text"],
+form textarea {
+    background-color: #121212;
+    color: #F5F5F5;
+    border: 1px solid #D72638;
+    border-radius: 5px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    resize: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #F46036;
+    box-shadow: 0 0 5px #F46036;
+}
+
+form input[type="submit"] {
+    background-color: #D72638;
+    color: #F5F5F5;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #F46036;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    main{
+        padding: 0;
+    }
+
+    .main-content{
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 1rem;
+        border: 0px;
+        background: #121212;
+    }
+}

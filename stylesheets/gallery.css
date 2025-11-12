@@ -1,0 +1,44 @@
+.gallery-main{
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.album{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+
+    width: 23rem;
+    border: 3px solid #D72638;
+    border-radius: 3%;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(270deg, #1E1E1E 0%, #2A2A2A 100%);
+
+    text-align: center;
+}
+
+.album h2 {
+    text-transform: capitalize;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    white-space: normal; 
+}
+
+.album img{
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
