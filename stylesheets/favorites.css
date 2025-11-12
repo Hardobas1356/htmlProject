@@ -1,0 +1,109 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-content h2 {
+    font-size: 1.8rem;
+    color: #F5F5F5;
+    text-transform: uppercase;
+    margin-top: 2.5rem;
+}
+
+.main-content h2:first-of-type {
+    margin-top: 0;
+}
+
+.main-content hr {
+    width: 60%;
+    border: 2px solid #D72638;
+    border-radius: 10px;
+    margin-bottom: 1.8rem;
+}
+
+.top-list {
+    list-style: decimal;
+    counter-reset: album-counter;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.top-list li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+    border-left: 4px solid #D72638;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.top-list li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 20px rgba(215, 38, 56, 0.4);
+}
+
+.top-list img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.top-list h3 {
+    font-size: 1.2rem;
+    color: #F5F5F5;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.top-list p {
+    color: #ccc;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.top-list .album-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 1rem;
+        border: 0px;
+        background: #121212;
+    }
+
+    .top-list li {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-list img {
+        width: 260px;
+        height: 260px;
+    }
+
+    .top-list p {
+        max-width: 90%;
+    }
+
+    .top-list .album-info {
+        align-items: center;
+    }
+}
